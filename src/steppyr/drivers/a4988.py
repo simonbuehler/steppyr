@@ -31,9 +31,9 @@ class A4988Driver(StepDirDriver):
 
   def activate(self):
     super().activate()
-    GPIO.setup(ms1_pin, GPIO.OUT)
-    GPIO.setup(ms2_pin, GPIO.OUT)
-    GPIO.setup(ms3_pin, GPIO.OUT)
+    GPIO.setup(self.ms1_pin, GPIO.OUT)
+    GPIO.setup(self.ms2_pin, GPIO.OUT)
+    GPIO.setup(self.ms3_pin, GPIO.OUT)
 
   def set_microsteps(self, microsteps):
     super().set_microsteps(microsteps)
