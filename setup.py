@@ -6,6 +6,8 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[
+        'RPi.GPIO',
+        'spidev'
     ],
     author="Simon Buehler",
     author_email="simon@00010111.de",
